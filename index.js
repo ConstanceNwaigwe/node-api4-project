@@ -17,6 +17,9 @@ const Users = [
     }
 ];
 
+server.get("/", (req,res) => {
+    res.send("Users");
+})
 server.get("/api/users", (req,res) => {
     res.send(Users);
 })
